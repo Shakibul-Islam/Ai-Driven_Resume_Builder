@@ -1,13 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router";
+import Navbar from "../component/Navbar";
 
 function Root() {
     return <div>
-            <h1>Hello world!</h1>
-            <p>This is a paragraph</p>
+            {/* navbar */}
+            <Navbar />
 
             <Outlet />
         </div>;
     
-}
+};
 export default Root;
